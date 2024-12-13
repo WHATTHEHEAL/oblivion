@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<Head>
+<meta charset="utf-8">
+<Title>HTML Portfolio Website</Title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('new bg.png'); 
+          background-size: cover; 
+            background-repeat: no-repeat; 
+			background-attachment: fixed;
+        }
+		
+		 img {
+            width: 80%; 
+            display: block; 
+            margin: 25px auto 0; 
+		}
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0px;
+            margin-top: -80px;
+			margin-left: 200px;
+        }
+
+        .image-container img {
+            width: 50%; 
+            height: auto;
+			
+        }
+
+        .left-image-container {
+            position: relative;
+            width: 50%;
+			margin-top: 150px;			
+        }
+
+        .left-image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .right-image-container {
+            width: 50%; 
+			margin-top: 55px;
+       
+        }
+
+        .right-image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay-text {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: Black; 
+            font-size: 35px;
+            text-align: center;
+            font-family: Galliard BT;
+            z-index: 1;
+			line-height: 1.5;
+        }
+        .single-image {
+            display: block;
+            width: 70%; 
+            height: auto;
+            margin-top:-200px; 
+        }
+    </style>
+</Head>
+<body>
+<audio id="bg-music" autoplay loop controls>
+    <source src="stargirl.mp3" type="audio/mpeg">
+</audio>
+<nav>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="Achievements.html">Achievements</a></li>
+<li><a href="Projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<img src="header logo.png" alt="logo"> 
+<div class="image-container">
+    <div class="left-image-container">
+        <img src="contact banner.png" alt="Left Image"> 
+      <div class="overlay-text">
+    Phone: <u>+63 976 311 5840</u><br>
+    Email: <u>20235000290@feualabang.edu.ph</u><br>
+    Personal Email: <u>lowrimorepadronia010307@gmail.com</u><br>
+    Facebook: <u>Lowrimore Padronia</u><br>
+    IG: <u>@lowri.np</u>
+</div>
+
+    </div>
+    <div class="right-image-container"> <!-- This now controls the right image margin -->
+        <img src="im a mirrorball.png" alt="Right Image" class="right-image">
+    </div>
+</div>
+<img src="phone banner.png" alt="phone banner" class="single-image">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

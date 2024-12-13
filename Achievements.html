@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<Head>
+<meta charset="utf-8">
+<Title>HTML Portfolio Website</Title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('new bg.png'); 
+          background-size: cover; 
+            background-repeat: no-repeat; 
+			background-attachment: fixed;
+        }
+		
+		 img {
+            width: 80%; 
+            display: block; 
+            margin: 25px auto 0; 
+		}
+		.image-container {
+            display: flex; 
+            justify-content: space-between; 
+            margin-top: 30px ; 
+			width: 60%;
+			gap: 287px;
+        }
+		.left-image, .right-image {
+            width: 30%; 
+            height: auto; 
+        }
+        .achievement-image {
+            width: 50%; 
+			height: auto;
+        }
+	
+        .single-image-container {
+            display: flex; 
+            justify-content: center; 
+            margin: 20px 0; 
+        }
+
+        .single-image {
+            width: 45%; 
+            height: auto; 
+			margin-top: 9%;
+        }
+    </style>
+</Head>
+<body>
+<audio id="bg-music" autoplay loop controls>
+    <source src="stargirl.mp3" type="audio/mpeg">
+</audio>
+<nav>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="Achievements.html">Achievements</a></li>
+<li><a href="Projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<img src="header logo.png" alt="logo"> 
+<div class="image-container">
+    <img src="shocked left.png" alt="shocked left" class="left-image">
+    <img src="achievements.png" alt="all achievements" class="achievement-image">
+    <img src="shocked right.png" alt="shocked right" class="right-image">
+</div>
+<div class="single-image-container">
+    <img src="cigs.png" alt="cigs" class="single-image">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

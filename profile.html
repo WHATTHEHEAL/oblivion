@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<Head>
+<meta charset="utf-8">
+<Title> HTML Portfolio Website </Title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('new bg.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+			background-attachment: fixed;
+        }
+		.image-container {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin: 10px; 
+			margin-top: 70px;
+        }
+
+        .left-image {
+            width: 40%; 
+            height: auto; 
+			margin-left: 130px
+        }
+
+        .right-image-container {
+            position: relative; 
+            width: 80%;
+            height: auto;
+        }
+
+        .right-image {
+            width: 60%;
+            height: auto; 
+			margin-left: 120px;
+        }
+
+        .overlay-text {
+            position: absolute; 
+            top: 20%; 
+            left: 53%;
+            transform: translate(-62%, -20%); 
+            color: #000014; 
+            font-size: 35px; 
+            text-align: left; 
+            font-family: Galliard BT;
+            z-index: 1; 
+        }
+		 .info {
+            margin: 45px 0;
+        }
+		.bottom-image {
+            display: block;
+            margin: 50px auto;
+            width: 70%;  
+            height: auto;
+			margin-top: -140px;
+        }
+		.additional-image-container {
+            margin: 20px auto; /* Controls space between previous image and new one */
+            text-align: center; /* Centers the images */
+        }
+
+        .additional-image {
+            display: block;
+            width: 30%; 
+            margin: 0px auto; 
+			margin-top: -100px;
+			
+        }
+		.overlay-container {
+            position: relative;
+            width: 50%;
+            margin-left: 175px; 
+        }
+
+        .overlay-image {
+            width: 150%;
+            height: auto;
+			margin: 0 ;
+        }
+
+        .overlay-text-bottom {
+		    position: absolute;
+			top: 15%; 
+			left: 290px; 
+			color: black; 
+			font-size: 26px;
+			text-align: center; 
+			font-family: Galliard BT;
+			z-index: 1;
+			width: 80%; 
+			line-height: 1.5;
+        }
+    </style>
+</Head>
+<body>
+<audio id="bg-music" autoplay loop controls>
+    <source src="stargirl.mp3" type="audio/mpeg">
+</audio>
+<nav>
+
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="Achievements.html">Achievements</a></li>
+<li><a href="Projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<img src="header logo.png" alt="Logo" style="display: block; margin: 25px auto; width: 80.1%; height: auto;">
+
+
+<div class="image-container">
+    <img src="lowri pic.png" alt="Left Image" class="left-image"> 
+    <div class="right-image-container">
+        <img src="text box 2.png" alt="Right Image" class="right-image"> 
+        <div class="overlay-text">
+            <div class="info">Name: Lowrimore N. Padronia</div>
+            <div class="info">Age: 17</div>
+            <div class="info">Sex: F</div>
+			<div class="info">Grade Level: 12</div>
+			<div class="info">Residency: Binan, Laguna</div>
+			<div class="info">Occupation: Student</div>
+        </div> 
+    </div>
+</div>
+<img src="deco cherry.png" alt="cherry banner" class="bottom-image">
+<div class="additional-image-container">
+    <img src="about banner.png" alt="about banner" class="additional-image">
+
+    <div class="overlay-container">
+        <img src="transparent text box.png" alt="text box" class="overlay-image">
+        <div class="overlay-text-bottom">Lowrimore N. Padronia is currently a student at FEU-Alabang taking up STEM-Health Allied strand. Lowrimore has always been an honor student ever since she could remember. Afraid of failing the expectations she set herself, she promises to do the best she can to achieve her dream--being a doctor. Besides being a student, Lowrimore is a 17-year-old girl who loves to avoid the sun, complain about the weather, and read books she illegally downloaded online. When she's not sleeping nor reading a novel, she plays and cuddles with her self-proclaimed biological son, Chicken the Chihuahua. All her life, she follows one saying: "Ad Meliora". </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

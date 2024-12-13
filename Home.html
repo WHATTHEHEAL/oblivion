@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<Head>
+<meta charset="utf-8">
+<Title> HTML Portfolio Website </Title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('new bg.png'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+			background-attachment: fixed;
+        }
+		
+		 img {
+            width: 80%; 
+            display: block; 
+            margin: 25px auto 0; 
+        }
+		 .image-container {
+            position: relative; 
+            width: 80%; 
+            margin: 20px auto; 
+        }
+
+        .overlay-image {
+            width: 100%; 
+			margin-top: 80px;
+        }
+		
+        .overlay-text {
+            position: absolute; 
+            top: 62%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            color: #000014; 
+            font-size: 24px; 
+            text-align: center; 
+            font-family: Galliard BT;
+            z-index: 1;
+			line-height: 1.5;
+        }
+		.bottom-image-container {
+            display: flex;
+            justify-content: center;
+			gap: 777px;
+            width: 70%;
+			margin: 0 auto;
+            margin-top: -450px;
+        }
+
+        .bottom-left-image, .bottom-right-image {
+            width: 40%;
+            height: auto;
+        }
+    </style>
+</Head>
+<body>
+<audio id="bg-music" autoplay loop controls>
+    <source src="stargirl.mp3" type="audio/mpeg">
+</audio>
+
+<nav>
+<ul>
+<li><a href="Home.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="Achievements.html">Achievements</a></li>
+<li><a href="Projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<img src="header logo.png" alt="logo"> 
+
+<div class="image-container">
+    <img src="text box.png" alt="text box" class="overlay-image"> 
+    <div class="overlay-text">Dearest Reader, thank you for taking the time to visit my portfolio. Titled "Lowri's Studio", this website is a compilation of basic information about me, as well as the achievements I accomplished so far. Making this was a rocky journey, but it was all worth it in the end. I hope you enjoy its contents, appreciate the effort behind it, and of course, gain some insights on the few aspects of my life I showcased in this portfolio. Servin' it hot, so read up and enjoy! xoxo</div> 
+</div>
+<div class="bottom-image-container">
+    <img src="deco candle left.png" alt="candle left" class="bottom-left-image">
+    <img src="deco candle right.png" alt="candle right" class="bottom-right-image">
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
